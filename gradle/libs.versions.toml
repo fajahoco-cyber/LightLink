@@ -1,8 +1,8 @@
 [versions]
-agp = "8.7.3"
-kotlin = "2.0.21"
-composeBom = "2024.12.01"
-coreKtx = "1.15.0"
+agp = "9.5.1"
+kotlin = "2.4.21"
+composeBom = "2026.09.00"
+coreKtx = "1.19.1"
 activityCompose = "1.9.3"
 lifecycle = "2.8.7"
 camerax = "1.4.0"
