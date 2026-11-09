@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LightLink</string>
+    <string name="home_headline">ارتباط بدون شبکه</string>
+    <string name="home_subtitle">پیام را با نور فلش یا صدا بین دو گوشی بفرستید و فاصله‌ی رعدوبرق را بسنجید.</string>
+    <string name="feature_comm_title">ارتباط نوری و صوتی</string>
+    <string name="feature_comm_desc">ارسال و دریافت متن بین دو گوشی با فلش، دوربین، بلندگو و میکروفون</string>
+    <string name="feature_lightning_title">فاصله‌سنج رعدوبرق</string>
+    <string name="feature_lightning_desc">تخمین فاصله‌ی آذرخش از روی فاصله‌ی زمانی نور و صدا</string>
+    <string name="feature_settings_title">تاریخچه و تنظیمات</string>
+    <string name="feature_settings_desc">اندازه‌گیری‌های قبلی، دما، سرعت انتقال و فرکانس‌ها</string>
+    <string name="coming_soon">به‌زودی</string>
+    <string name="offline_note">این برنامه مجوز اینترنت ندارد و هیچ داده‌ای از گوشی شما خارج نمی‌شود.</string>
+
+    <string name="back">بازگشت</string>
+    <string name="channel_light">نور</string>
+    <string name="channel_audio">صدا</string>
+    <string name="tab_send">ارسال</string>
+    <string name="tab_receive">دریافت</string>
+
+    <string name="send_message_label">متن پیام</string>
+    <string name="send_bytes_counter">%1$s از %2$s بایت</string>
+    <string name="send_speed_title">سرعت</string>
+    <string name="speed_stable">پایدار</string>
+    <string name="speed_standard">استاندارد</string>
+    <string name="speed_fast">سریع</string>
+    <string name="send_speed_detail">سرعت خام: %1$s بیت بر ثانیه. سرعت بالاتر در همه‌ی گوشی‌ها پایدار نیست.</string>
+    <string name="send_repeats_title">تعداد تکرار هر بسته</string>
+    <string name="send_estimate">زمان تقریبی ارسال: %1$s</string>
+    <string name="send_start">شروع ارسال</string>
+    <string name="send_cancel">لغو ارسال</string>
+    <string name="send_status_progress">ارسال بسته %1$s از %2$s · حدود %3$s باقی مانده</string>
+    <string name="send_done">ارسال کامل شد.</string>
+    <string name="send_late_warning">گوشی در کنترل فلش تأخیر داشت. اگر گیرنده پیام را نگرفت، سرعت «پایدار» را امتحان کنید.</string>
+    <string name="send_hint">فلش پشت گوشی را روبه‌روی دوربین گوشی گیرنده و در فاصله‌ی حدود ۲۰ سانتی‌متر نگه دارید. محیط را کم‌نور کنید و در طول ارسال گوشی را حرکت ندهید. ارسال کند است؛ پیام کوتاه بفرستید.</string>
+    <string name="issue_no_torch">این گوشی فلش قابل‌کنترل ندارد یا در دسترس نیست.</string>
+    <string name="issue_too_long">پیام بیش از ۲۰۰ بایت است. آن را کوتاه‌تر کنید.</string>
+    <string name="issue_empty">ابتدا پیام را بنویسید.</string>
+    <string name="issue_torch_failed">کنترل فلش با خطا روبه‌رو شد. ممکن است برنامه‌ی دیگری از دوربین یا فلش استفاده کند.</string>
+
+    <string name="recv_permission_title">اجازه‌ی دوربین لازم است</string>
+    <string name="recv_permission_body">برای خواندن نور فلش گوشی فرستنده، دوربین لازم است. تصویر دوربین ذخیره یا ارسال نمی‌شود.</string>
+    <string name="recv_permission_button">اجازه‌ی دوربین</string>
+    <string name="recv_settings_button">باز کردن تنظیمات برنامه</string>
+    <string name="recv_permission_denied">اجازه داده نشد. بدون دوربین دریافت ممکن نیست.</string>
+    <string name="recv_roi_hint">روی تصویر بزنید تا کادر زرد روی نور فلش قرار گیرد.</string>
+    <string name="recv_brightness">روشنایی ناحیه‌ی کادر: %1$s از ۲۵۵</string>
+    <string name="recv_signal">کیفیت سیگنال</string>
+    <string name="recv_state_idle">آماده‌ی دریافت</string>
+    <string name="recv_state_waiting">در انتظار شروع فرستنده…</string>
+    <string name="recv_state_locked">همگام شد؛ در حال دریافت…</string>
+    <string name="recv_progress">بسته‌های دریافتی: %1$s از %2$s</string>
+    <string name="recv_missing">بسته‌های گم‌شده: %1$s</string>
+    <string name="recv_stats">سالم: %1$s · ردشده: %2$s · بیت‌های اصلاح‌شده: %3$s</string>
+    <string name="recv_message_title">پیام دریافتی</string>
+    <string name="recv_invalid">پیام کامل شد ولی متن معتبر نیست؛ نمایش داده نمی‌شود.</string>
+    <string name="recv_start">شروع دریافت</string>
+    <string name="recv_stop">توقف دریافت</string>
+    <string name="recv_clear">پاک کردن</string>
+    <string name="recv_tip">نور اتاق را کم کنید و فلش فرستنده را در کادر زرد نگه دارید. تا همگام شدن چند ثانیه صبر کنید؛ هر بسته حدود یک دقیقه طول می‌کشد.</string>
+
+    <string name="audio_speed_slow">کند</string>
+    <string name="audio_speed_stable">پایدار</string>
+    <string name="audio_speed_standard">استاندارد</string>
+    <string name="audio_speed_fast">سریع</string>
+    <string name="audio_speed_detail">سرعت خام: %1$s بیت بر ثانیه. گیرنده سرعت را خودکار تشخیص می‌دهد. در اتاق پرپژواک سرعت «کند» یا «پایدار» را انتخاب کنید.</string>
+    <string name="audio_send_start">پخش پیام</string>
+    <string name="audio_send_hint">بلندگوی گوشی فرستنده را رو به میکروفون گیرنده و در فاصله‌ی ۲۰ تا ۵۰ سانتی‌متر بگذارید. صدای رسانه را متوسط تا بلند کنید، محیط را ساکت نگه دارید و در حین ارسال گوشی را حرکت ندهید. صدای ارسال شبیه سوت‌های متناوب است.</string>
+    <string name="issue_audio_failed">پخش صدا با خطا روبه‌رو شد. ممکن است برنامه‌ی دیگری از بلندگو استفاده کند.</string>
+    <string name="issue_mic_failed">میکروفون در دسترس نیست یا برنامه‌ی دیگری از آن استفاده می‌کند.</string>
+    <string name="mic_permission_title">اجازه‌ی میکروفون لازم است</string>
+    <string name="mic_permission_body">برای شنیدن صدای گوشی فرستنده، میکروفون لازم است. صدا ضبط یا ذخیره نمی‌شود؛ فقط همان لحظه برای تشخیص پیام پردازش می‌شود.</string>
+    <string name="mic_permission_button">اجازه‌ی میکروفون</string>
+    <string name="mic_permission_denied">اجازه داده نشد. بدون میکروفون دریافت صدا ممکن نیست.</string>
+    <string name="audio_level">سطح صدای ورودی</string>
+    <string name="audio_state_waiting">در انتظار صدای فرستنده…</string>
+    <string name="audio_recv_tip">محیط را ساکت کنید و بلندگوی فرستنده را نزدیک میکروفون این گوشی بگیرید. پس از «شروع دریافت»، ارسال را در گوشی دیگر آغاز کنید. اگر نوار سطح صدا خالی می‌ماند، صدای فرستنده را بلندتر یا گوشی‌ها را نزدیک‌تر کنید.</string>
+</resources>
