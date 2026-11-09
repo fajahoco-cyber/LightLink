@@ -1,0 +1,20 @@
+version: 2
+updates:
+  # همه‌ی وابستگی‌های Gradle (AGP، Kotlin، Compose، AndroidX) باید با هم ارتقا یابند؛
+  # بنابراین در یک PR ماهانه گروه‌بندی می‌شوند.
+  - package-ecosystem: gradle
+    directory: "/"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 2
+    groups:
+      gradle-all:
+        patterns: ["*"]
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 2
+    groups:
+      actions-all:
+        patterns: ["*"]
