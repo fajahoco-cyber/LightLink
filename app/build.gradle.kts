@@ -12,12 +12,27 @@ android {
         applicationId = "app.lightlink"
         minSdk = 26
         targetSdk = 35
-        versionCode = 3
-        versionName = "0.3.0"
+        versionCode = 4
+        versionName = "1.0.0-rc1"
+    }
+
+    // امضای انتشار فقط وقتی فعال می‌شود که متغیرهای محیطی (از Secrets گیت‌هاب) تنظیم شده باشند.
+    // کلید امضا هرگز در مخزن نگهداری نمی‌شود.
+    val keystorePath: String? = System.getenv("KEYSTORE_FILE")
+    signingConfigs {
+        if (keystorePath != null) {
+            create("release") {
+                storeFile = file(keystorePath)
+                storePassword = System.getenv("KEYSTORE_PASSWORD")
+                keyAlias = System.getenv("KEY_ALIAS")
+                keyPassword = System.getenv("KEY_PASSWORD")
+            }
+        }
     }
 
     buildTypes {
         release {
+            if (keystorePath != null) signingConfig = signingConfigs.getByName("release")
             isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),

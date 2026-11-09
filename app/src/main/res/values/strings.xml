@@ -6,9 +6,9 @@
     <string name="feature_comm_title">ارتباط نوری و صوتی</string>
     <string name="feature_comm_desc">ارسال و دریافت متن بین دو گوشی با فلش، دوربین، بلندگو و میکروفون</string>
     <string name="feature_lightning_title">فاصله‌سنج رعدوبرق</string>
-    <string name="feature_lightning_desc">تخمین فاصله‌ی آذرخش از روی فاصله‌ی زمانی نور و صدا</string>
+    <string name="feature_lightning_desc">تخمین فاصله‌ی آذرخش از روی فاصله‌ی زمانی نور و رعد</string>
     <string name="feature_settings_title">تاریخچه و تنظیمات</string>
-    <string name="feature_settings_desc">اندازه‌گیری‌های قبلی، دما، سرعت انتقال و فرکانس‌ها</string>
+    <string name="feature_settings_desc">اندازه‌گیری‌های قبلی با تاریخ شمسی و تنظیم دمای هوا</string>
     <string name="coming_soon">به‌زودی</string>
     <string name="offline_note">این برنامه مجوز اینترنت ندارد و هیچ داده‌ای از گوشی شما خارج نمی‌شود.</string>
 
@@ -75,4 +75,28 @@
     <string name="audio_level">سطح صدای ورودی</string>
     <string name="audio_state_waiting">در انتظار صدای فرستنده…</string>
     <string name="audio_recv_tip">محیط را ساکت کنید و بلندگوی فرستنده را نزدیک میکروفون این گوشی بگیرید. پس از «شروع دریافت»، ارسال را در گوشی دیگر آغاز کنید. اگر نوار سطح صدا خالی می‌ماند، صدای فرستنده را بلندتر یا گوشی‌ها را نزدیک‌تر کنید.</string>
+
+    <string name="lightning_safety_banner">این برنامه جایگزین هشدارهای رسمی نیست. با شنیدن رعد به ساختمان یا خودروی بسته پناه ببرید و زیر درخت، در فضای باز یا کنار آب نایستید.</string>
+    <string name="lightning_howto">به‌محض دیدن برق، دکمه‌ی «برق را دیدم» را بزنید. وقتی صدای رعد را شنیدید، «رعد را شنیدم» را بزنید.</string>
+    <string name="lightning_temperature_used">دمای هوا برای محاسبه: %1$s درجه‌ی سانتی‌گراد (از بخش تنظیمات تغییر می‌کند)</string>
+    <string name="lightning_saw_flash">برق را دیدم</string>
+    <string name="lightning_heard_thunder">رعد را شنیدم</string>
+    <string name="lightning_cancel">لغو</string>
+    <string name="lightning_result_distance">فاصله‌ی تقریبی: %1$s</string>
+    <string name="lightning_result_range">با در نظر گرفتن زمان واکنش دست (±۰٫۳ ثانیه): %1$s تا %2$s</string>
+    <string name="lightning_level_immediate">خطر فوری: آذرخش بسیار نزدیک است. همین حالا پناه بگیرید.</string>
+    <string name="lightning_level_danger">هنوز در محدوده‌ی خطر هستید. پناه بگیرید.</string>
+    <string name="lightning_level_distant">دور است، ولی طوفان ممکن است نزدیک شود. اندازه‌گیری را تکرار کنید.</string>
+    <string name="lightning_rule_30_30">قاعده‌ی ۳۰-۳۰: اگر فاصله‌ی برق تا رعد کمتر از ۳۰ ثانیه است پناه بگیرید و تا ۳۰ دقیقه پس از آخرین رعد بیرون نیایید.</string>
+    <string name="lightning_unreliable">فاصله‌ی زمانی بیش از ۹۰ ثانیه است؛ احتمالاً برق و رعد مربوط به یک آذرخش نیستند و عدد قابل اتکا نیست.</string>
+    <string name="lightning_limits">دقت این روش محدود است: به زمان واکنش شما، دمای واقعی هوا، باد و بازتاب صدا از کوه‌ها بستگی دارد. نتیجه فقط یک تخمین است.</string>
+    <string name="settings_temperature_title">دمای هوا</string>
+    <string name="settings_temperature_value">%1$s درجه‌ی سانتی‌گراد</string>
+    <string name="settings_sound_speed">سرعت صوت در این دما: حدود %1$s متر بر ثانیه</string>
+    <string name="settings_history_title">اندازه‌گیری‌های قبلی</string>
+    <string name="settings_history_empty">هنوز اندازه‌گیری‌ای ذخیره نشده است.</string>
+    <string name="settings_history_row">%1$s، ساعت %2$s · تأخیر %3$s · %4$s</string>
+    <string name="settings_history_unreliable">نامعتبر</string>
+    <string name="settings_history_clear">پاک کردن تاریخچه</string>
+    <string name="settings_about">همه‌ی داده‌ها فقط روی همین گوشی می‌مانند. برنامه مجوز اینترنت ندارد.</string>
 </resources>

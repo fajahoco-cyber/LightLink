@@ -24,20 +24,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import app.lightlink.R
 
-private data class Feature(val title: Int, val description: Int, val enabled: Boolean)
+private data class Feature(val title: Int, val description: Int, val onClick: () -> Unit)
 
-private val features = listOf(
-    Feature(R.string.feature_comm_title, R.string.feature_comm_desc, enabled = true),
-    Feature(R.string.feature_lightning_title, R.string.feature_lightning_desc, enabled = false),
-    Feature(R.string.feature_settings_title, R.string.feature_settings_desc, enabled = false),
-)
-
-/**
- * صفحه‌ی اصلی. کارت‌های هنوز ساخته‌نشده غیرفعال و با برچسب «به‌زودی» نمایش داده می‌شوند،
- * چون هر قابلیت در مرحله‌ی خودش اضافه می‌شود و دکمه‌ی بی‌عملکرد نباید فعال به‌نظر برسد.
- */
+/** صفحه‌ی اصلی با سه کارت: ارتباط، فاصله‌سنج رعدوبرق، تاریخچه و تنظیمات. */
 @Composable
-fun HomeScreen(onOpenComm: () -> Unit) {
+fun HomeScreen(onOpenComm: () -> Unit, onOpenLightning: () -> Unit, onOpenSettings: () -> Unit) {
+    val features = listOf(
+        Feature(R.string.feature_comm_title, R.string.feature_comm_desc, onOpenComm),
+        Feature(R.string.feature_lightning_title, R.string.feature_lightning_desc, onOpenLightning),
+        Feature(R.string.feature_settings_title, R.string.feature_settings_desc, onOpenSettings),
+    )
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -66,11 +62,7 @@ fun HomeScreen(onOpenComm: () -> Unit) {
 
         features.forEach { feature ->
             val shape = RoundedCornerShape(20.dp)
-            val clickModifier = if (feature.enabled) {
-                Modifier.clip(shape).clickable(role = Role.Button, onClick = onOpenComm)
-            } else {
-                Modifier
-            }
+            val clickModifier = Modifier.clip(shape).clickable(role = Role.Button, onClick = feature.onClick)
             Surface(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -79,7 +71,7 @@ fun HomeScreen(onOpenComm: () -> Unit) {
                 color = MaterialTheme.colorScheme.surface,
                 border = BorderStroke(
                     1.dp,
-                    if (feature.enabled) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.outline,
+                    MaterialTheme.colorScheme.primary,
                 ),
             ) {
                 Row(
@@ -100,13 +92,6 @@ fun HomeScreen(onOpenComm: () -> Unit) {
                         Text(
                             text = stringResource(feature.description),
                             style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        )
-                    }
-                    if (!feature.enabled) {
-                        Text(
-                            text = stringResource(R.string.coming_soon),
-                            style = MaterialTheme.typography.labelMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                         )
                     }

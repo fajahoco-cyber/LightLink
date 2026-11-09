@@ -9,8 +9,10 @@ import androidx.compose.runtime.setValue
 
 private const val SCREEN_HOME = "home"
 private const val SCREEN_COMM = "comm"
+private const val SCREEN_LIGHTNING = "lightning"
+private const val SCREEN_SETTINGS = "settings"
 
-/** ناوبری ساده‌ی دو صفحه‌ای؛ با افزودن قابلیت‌های بعدی گسترش می‌یابد. */
+/** ناوبری ساده‌ی تک‌پشته‌ای بین صفحه‌ی اصلی و سه بخش برنامه. */
 @Composable
 fun LightLinkApp() {
     var screen by rememberSaveable { mutableStateOf(SCREEN_HOME) }
@@ -19,6 +21,12 @@ fun LightLinkApp() {
 
     when (screen) {
         SCREEN_COMM -> CommScreen(onBack = { screen = SCREEN_HOME })
-        else -> HomeScreen(onOpenComm = { screen = SCREEN_COMM })
+        SCREEN_LIGHTNING -> LightningScreen(onBack = { screen = SCREEN_HOME })
+        SCREEN_SETTINGS -> SettingsScreen(onBack = { screen = SCREEN_HOME })
+        else -> HomeScreen(
+            onOpenComm = { screen = SCREEN_COMM },
+            onOpenLightning = { screen = SCREEN_LIGHTNING },
+            onOpenSettings = { screen = SCREEN_SETTINGS },
+        )
     }
 }
